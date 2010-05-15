@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Pie Menu Example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="jquery-1.4.2.js"></script>
+	<script type="text/javascript" src="jquery.piemenu.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function() {
+	    $(".container").pieMenu("ul#menu");
+    });
+	</script>
+	<style>
+	.PieContextMenu {
+		display: none;
+		list-style-type: none;
+		position: absolute;
+		margin:0px;
+		padding:0px;
+		z-index: 2000;
+	}
+	</style>
+</head>
+<body>
+ 
+    <ul id="menu" class="PieContextMenu">
+        <li><a href="#" onclick="$('.container').html('You selected IE!');"><img src="IE.png" alt="" /></a></li>
+        <li><a href="#" onclick="$('.container').html('You selected Chrome!');"><img src="chrome.png" alt="" /></a></li>
+        <li><a href="#" onclick="$('.container').html('You selected Firefox!');"><img src="ff.png" alt="" /></a></li>
+        <li><a href="#" onclick="$('.container').html('You selected Flock!');"><img src="flock.png" alt="" /></a></li>
+        <li><a href="#" onclick="$('.container').html('You selected Opera!');"><img src="opera.png" alt="" /></a></li>
+    </ul>
+    
+ 	<div style="width:100%;height:500px;background-color:#666666;" class="container">
+ 	  
+ 	</div>
+ 	<p><a href="http://www.iconarchive.com/category/application/browser-icons-by-royalflushxx.html">Icons By Royalflushxx (Sam Butcher)</a></p>
+</body>
+</html>
